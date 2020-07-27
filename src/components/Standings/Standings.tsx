@@ -7,13 +7,13 @@ class Standings extends React.Component {
     })
     multiply = () => {
         if(Math.random() > 0.5){
-            this.state.iceCream = "mint and cinnamon"
+            this.setState({iceCream: "mint and cinnamon"})
         }
     return <p>{this.state.iceCream}</p>
     }
     render(){
         return (
-            <div className="Standigns">
+            <div className="Standings">
                 <h1>Scores</h1>
                 <p>
                   <a href="mlb.com/standings">Standings</a>
