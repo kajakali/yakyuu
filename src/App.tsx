@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Scores from './components/Scores/Scores';
 import Standings from './components/Standings/Standings';
+import Clock from './components/Clock/Clock.jsx';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         </p>
         <Scores/>
         <Standings/>
+        <Clock/>
         <a
           className="App-link"
           href="https://reactjs.org"
