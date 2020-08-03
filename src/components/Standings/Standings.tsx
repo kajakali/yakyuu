@@ -16,7 +16,7 @@ class Standings extends React.Component {
             <div className="Standings">
                 <h1>Scores</h1>
                 <p>
-                  <a href="mlb.com/standings">Standings</a>
+                  <a href="https://mlb.com/standings">Standings</a>
                   {this.multiply()}
  
                 </p>

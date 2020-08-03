@@ -6,7 +6,7 @@ function Scores() {
     <div className="Scores">
         <h1>Scores</h1>
         <p>
-          <a href="mlb.com/scores">Scores</a>
+          <a href="https://mlb.com/scores">Scores</a>
         </p>
     </div>
   );
