@@ -8,33 +8,25 @@ import Face from './Face';
 class Clock extends Component {
 
   state = ({
-    hour_rotation: 190,
-    minute_rotation: 40,
-    second_rotation: 280,
-  })
-/* const HOURHAND = document.querySelector("#hour");
-const MINUTEHAND = document.querySelector("#minute");
-const SECONDHAND = document.querySelector("#second"); */
+    date: new Date(),
+  });
 
-/* function runTheClock() {
-    var date = new Date();
-    console.log(date);
-    let hr = date.getHours();
-    let min = date.getMinutes();
-    let sec = date.getSeconds();
-    console.log("Hour: " + hr + " Minute: " + min + " Second: " + sec);
-
-    let hrPosition = (hr*360/12)+(min*(360/60)/12);
-    let minPosition = (min*360/60)+(sec*(360/60)/60);
-    let secPosition = sec*360/60;
-
-    HOURHAND.style.transform = "rotate(" + hrPosition + "deg)";
-    MINUTEHAND.style.transform = "rotate(" + minPosition + "deg)";
-    SECONDHAND.style.transform = "rotate(" + secPosition + "deg)";
-}
+  componentDidMount(){
+    setInterval(
+      () => {this.setState({date: new Date()})}, 1000
+    );
+  }
 
 
-var interval = setInterval(runTheClock, 1000); */
+ 
+
+
+
+
+ 
+ 
+
+
 
   render(){
       return (
@@ -46,9 +38,9 @@ var interval = setInterval(runTheClock, 1000); */
             <div class="clockbox">
             <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
                 <Face/>
-                <Hour rotation={this.state.hour_rotation}/>
-                <Minute rotation={this.state.minute_rotation}/>
-                <Second rotation={this.state.second_rotation}/>
+                <Hour rotation={(this.state.date.getHours()*360/12)+(this.state.date.getMinutes()*(360/60)/12)}/>
+                <Minute rotation={(this.state.date.getMinutes()*360/60+(this.state.date.getSeconds()*(360/60)/60))}/>
+                <Second rotation={this.state.date.getSeconds()*360/60}/>
             </svg>
         </div>
         </div>
