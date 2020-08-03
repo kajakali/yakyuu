@@ -46,7 +46,7 @@
 
 .second-arm {
     fill: none;
-    stroke: #000;
+    stroke: rgb(133, 38, 38);
     stroke-width: 4;
     stroke-miterlimit: 10;
 }
