@@ -33,9 +33,9 @@ class Clock extends Component {
         <div className="Clock">
             <h1>Clock</h1>
             <p>
-              I will be a clock
+              I am a clock
             </p>
-            <div class="clockbox">
+            <div className="clockbox">
             <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
                 <Face/>
                 <Hour rotation={(this.state.date.getHours()*360/12)+(this.state.date.getMinutes()*(360/60)/12)}/>
