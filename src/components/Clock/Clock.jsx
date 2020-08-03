@@ -7,6 +7,11 @@ import Face from './Face';
 
 class Clock extends Component {
 
+  state = ({
+    hour_rotation: 190,
+    minute_rotation: 40,
+    second_rotation: 280,
+  })
 /* const HOURHAND = document.querySelector("#hour");
 const MINUTEHAND = document.querySelector("#minute");
 const SECONDHAND = document.querySelector("#second"); */
@@ -41,9 +46,9 @@ var interval = setInterval(runTheClock, 1000); */
             <div class="clockbox">
             <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
                 <Face/>
-                <Hour/>
-                <Minute/>
-                <Second/>
+                <Hour rotation={this.state.hour_rotation}/>
+                <Minute rotation={this.state.minute_rotation}/>
+                <Second rotation={this.state.second_rotation}/>
             </svg>
         </div>
         </div>
