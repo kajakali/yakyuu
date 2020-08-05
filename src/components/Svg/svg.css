@@ -1,0 +1,11 @@
+.spiral {
+    fill:none;
+    fill-rule:evenodd;
+    stroke:#000000;
+    stroke-width:0.264583;
+};
+
+.star {
+    fill:#0000ff;
+    stroke-width:0.264583;
+}

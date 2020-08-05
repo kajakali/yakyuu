@@ -7,3 +7,8 @@ test('renders standings link', () => {
   const linkElement = getByText(/standings/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+/* test('multiply function gives an ice cream', () => {
+  expect(this.state.iceCream).toBeInTheDocument();
+})
+ */

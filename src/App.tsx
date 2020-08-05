@@ -4,6 +4,7 @@ import './App.css';
 import Scores from './components/Scores/Scores';
 import Standings from './components/Standings/Standings';
 import Clock from './components/Clock/Clock.jsx';
+import Svg from './components/Svg/Svg';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Scores/>
         <Standings/>
         <Clock/>
+        <Svg/>
         <a
           className="App-link"
           href="https://reactjs.org"
