@@ -1,14 +1,42 @@
-.spiral {
+#spiral {
     fill:none;
     fill-rule:evenodd;
     stroke:#611414;
     stroke-width:7;
 };
 
-.star {
+#star {
     fill:#0000ff !important;
     stroke-width:5;
     stroke:#4c4b7e !important;
 }
 
-  
+
+#shuttle {
+   fill:#ffffff;
+   stroke:#000000;
+   stroke-width:0.26458300000000001px;
+   stroke-linecap:butt;
+   stroke-linejoin:miter;
+   stroke-opacity:1;
+   fill-opacity:1;
+     
+}
+
+#SRB {
+   fill:#969696;
+   stroke:#000000;
+   stroke-width:0.264583px;
+   stroke-linecap:butt;
+   stroke-linejoin:miter;
+   stroke-opacity:1
+}
+#ET {
+    fill:#c54c1f;
+    stroke:#000000;
+    stroke-width:0.26458300000000001px;
+    stroke-linecap:butt;
+    stroke-linejoin:miter;
+    stroke-opacity:1;
+    fill-opacity:1
+}
