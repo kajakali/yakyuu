@@ -1,11 +1,14 @@
 .spiral {
     fill:none;
     fill-rule:evenodd;
-    stroke:#000000;
-    stroke-width:0.264583;
+    stroke:#611414;
+    stroke-width:7;
 };
 
 .star {
-    fill:#0000ff;
-    stroke-width:0.264583;
+    fill:#0000ff !important;
+    stroke-width:5;
+    stroke:#4c4b7e !important;
 }
+
+  
